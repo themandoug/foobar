@@ -1,0 +1,7 @@
+#!/bin/sh
+if [ -f $1/foo.txt ]; then
+  echo "Foo"
+  exit 0
+else
+  exit 1
+fi

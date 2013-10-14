@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cat << EOF
+---
+default_process_types:
+  web: bundle exec ruby web.rb -p $PORT
+EOF
