@@ -1,7 +1,8 @@
 #!/bin/sh
+BUILD_DIR=$1
 
 cat << EOF
 ---
 default_process_types:
-  web: bundle exec ruby web.rb -p $PORT
+  web: bundle exec ruby ${BUILD_DIR}/web.rb -p $PORT
 EOF
